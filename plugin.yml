@@ -1,0 +1,20 @@
+name: ClassicSurvivalMechanics
+main: io.github.bobdoleowndu.classicsurvivalmechanics.ClassicSurvivalMechanics
+version: 1.0
+api-version: 1.13
+description: Restores food mechanics to how they worked before the Minecraft Beta 1.8 release!
+commands:
+    SetHealth:
+        description: Sets the target player's health.
+        usage: /SetHealth <Target> <Value>
+        permission: csm.op
+        permission-message: You do not have permission!
+permissions:
+    csm.*:
+        description: Gives access to all commands.
+        default: op
+        children:
+            csm.op: true
+    csm.op:
+        description: Gives access to op commands.
+        default: op
