@@ -12,6 +12,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.potion.PotionEffect;
 
@@ -77,6 +78,9 @@ public class PlayerInteractEventListener implements Listener
 					newHealth = player.getHealth() + foodItem.healAmount;
 
 					inventory.remove(event.getItem());
+					
+					if(foodItem.hasBowl)
+						inventory.addItem(new ItemStack(Material.BOWL));
 
 					if (newHealth > maxHealth)
 						player.setHealth(maxHealth);

@@ -7,26 +7,29 @@ public class FoodItem
 {
 	Material material;
 	double healAmount;
+	boolean hasBowl;
 	boolean ignoreHealthCap;
 	boolean isPlantable;
 	int potionEffectActivationChance;
 	PotionEffect[] potionEffects;
 
-	public FoodItem(Material material, double healAmount, boolean ignoreHealthCap, boolean isPlantable)
+	public FoodItem(Material material, double healAmount, boolean hasBowl, boolean ignoreHealthCap, boolean isPlantable)
 	{
 		this.material = material;
 		this.healAmount = healAmount;
+		this.hasBowl = hasBowl;
 		this.ignoreHealthCap = ignoreHealthCap;
 		this.isPlantable = isPlantable;
 		this.potionEffectActivationChance = 0;
 		this.potionEffects = new PotionEffect[0];
 	} // constructor
 
-	public FoodItem(Material material, double healAmount, boolean ignoreHealthCap, boolean isPlantable,
+	public FoodItem(Material material, double healAmount, boolean hasBowl, boolean ignoreHealthCap, boolean isPlantable,
 			int potionEffectActivationChance, PotionEffect[] potionEffects)
 	{
 		this.material = material;
 		this.healAmount = healAmount;
+		this.hasBowl = hasBowl;
 		this.ignoreHealthCap = ignoreHealthCap;
 		this.isPlantable = isPlantable;
 		this.potionEffectActivationChance = potionEffectActivationChance;

@@ -4,7 +4,12 @@ version: 1.1
 api-version: 1.13
 description: Restores food mechanics to how they worked before the Minecraft Beta 1.8 release!
 commands:
-    SetHealth:
+    CsmReloadConfig:
+        description: Reloads ClassicSurvivalMechanics' config file.
+        usage: /CsmReload
+        permission: csm.op
+        permission-message: You do not have permission!
+    CsmSetHealth:
         description: Sets the target player's health.
         usage: /SetHealth <Target> <Value>
         permission: csm.op
