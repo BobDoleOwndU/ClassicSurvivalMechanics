@@ -10,7 +10,7 @@ public class FoodLevelChangeListener implements Listener
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onFoodLevelChange(FoodLevelChangeEvent event)
 	{
-		//Stop the food level from ever changing.
+		// Stop the food level from ever changing.
 		event.setCancelled(true);
-	} //onFoodLevelChange
-} //class
+	} // onFoodLevelChange
+} // class

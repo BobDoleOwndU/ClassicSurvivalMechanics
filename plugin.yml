@@ -1,6 +1,6 @@
 name: ClassicSurvivalMechanics
 main: io.github.bobdoleowndu.classicsurvivalmechanics.ClassicSurvivalMechanics
-version: 1.0
+version: 1.1
 api-version: 1.13
 description: Restores food mechanics to how they worked before the Minecraft Beta 1.8 release!
 commands:

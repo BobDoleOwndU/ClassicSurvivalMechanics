@@ -10,8 +10,8 @@ public class EntityRegainHealthListener implements Listener
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onEntityRegainHealth(EntityRegainHealthEvent event)
 	{
-		//Disable auto-healing from a filled hunger bar.
-		if(event.getRegainReason() == EntityRegainHealthEvent.RegainReason.SATIATED)
+		// Disable auto-healing from a filled hunger bar.
+		if (event.getRegainReason() == EntityRegainHealthEvent.RegainReason.SATIATED)
 			event.setCancelled(true);
-	} //onEntityRegainHealth
-} //class
+	} // onEntityRegainHealth
+} // class
